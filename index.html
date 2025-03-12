@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <header>
+        <a href="#" class="logo">Programación Empresarial</a>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;
+            
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="nav-cta">Cotiza Ahora</a>
+    </header>
+
+    <!-- Sección Inicio con Video de Fondo -->
+    <section id="inicio" class="inicio">
+        <video autoplay muted loop>
+            <source src="./assets/video-fondo.mp4" type="video/mp4">
+        </video>
+        <div class="inicio-contenido">
+            <h1>Impulsa tu Empresa con Tecnología de Vanguardia</h1>
+            <p>Desarrollamos soluciones digitales seguras y optimizadas.</p>
+            <a href="#contacto" class="boton-inicio">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios">
+        <h2 class="servicios-container">Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio-card">
+                <img src="./assets/icono-web.jpg" alt="Desarrollo Web">
+                <h3>Desarrollo Web</h3>
+                <p>Soluciones a medida para empresas.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="./assets/icon-seguridad.jpg" alt="Seguridad Informática">
+                <h3>Seguridad Informática</h3>
+                <p>Protegemos tu información y datos.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="./assets/icono-seo.jpg" alt="Optimización SEO">
+                <h3>Optimización SEO</h3>
+                <p>Posicionamos tu web en los primeros lugares.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Blog -->
+    <section id="blog">
+        <h2 class="servicios-container">Últimos Artículos</h2>
+        <div class="blog-contenedor">
+            <div class="articulo servicio-card">
+                <img src="./assets/icon-articulo.jpg" alt="Articulo 1">
+                <h3>Importancia de un Sitio Web Profesional</h3>
+                <p>Descubre por qué una web bien desarrollada marca la diferencia.</p>
+                <a href="./articulos/articulo1.html" class="boton-articulo">Leer Más</a>
+            </div>
+            <div class="articulo servicio-card">
+                <img src="./assets/icon-articulo.jpg" alt="Articulo 2">
+                <h3>Seguridad en el Desarrollo Web</h3>
+                <p>Cómo proteger tu negocio en línea de amenazas cibernéticas.</p>
+                <a href="./articulos/articulo2.html" class="boton-articulo">Leer Más</a>
+            </div>
+            <div class="articulo servicio-card">
+                <img src="./assets/icon-articulo.jpg" alt="Articulo 3">
+                <h3>SEO para Empresas</h3>
+                <p>Posiciona tu web con estrategias de optimización efectivas.</p>
+                <a href="./articulos/articulo3.html" class="boton-articulo">Leer Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros"> </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form id="formulario-contacto">
+            <div class="campo">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="campo">
+                <input type="email" name="correo" placeholder="Tu Correo" required>
+            </div>
+            <div class="campo">
+                <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-container">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+            <img src="./assets/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2025 Programación Empresarial - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

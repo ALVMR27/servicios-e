@@ -1,0 +1,421 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Barra de Navegación */
+header {
+    background: linear-gradient(135deg, #c0cce6, #2a5298);
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+/* Ocultamos el botón del menú en pantallas grandes */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    flex-direction: column;
+}
+.menu-toggle span {
+    background: white;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.nav-cta {
+    background: #ffcc00;
+    color: #1e3c72;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+    white-space: nowrap;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    margin-right: auto; /* Mueve el botón hacia la izquierda */
+    margin-left: auto; /* Ajusta según lo necesario */
+}
+
+    
+
+
+.nav-cta:hover {
+    background: #ffc107;
+}
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sección Inicio con Video de Fondo */
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.inicio video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.inicio-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.boton-inicio {
+    background: #ff3366;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background: #cc2955;
+}
+
+/* Sección Servicios */
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicio-card {
+    background: white;
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    max-width: 300px; /* Define un ancho máximo para evitar que sean demasiado grandes */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio-card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Tamaño fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px; /* Opcional: redondea los bordes de la imagen */
+}
+
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog */
+.blog-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.articulo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+/* Formulario de Contacto */
+.contacto {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.contacto h2 {
+    font-size: 28px;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.boton-enviar {
+    background: #ff3366;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-enviar:hover {
+    background: #cc2955;
+}
+.sobre-nosotros-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.sobre-nosotros-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nosotros-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.sobre-nosotros-texto h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+.sobre-nosotros-texto p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.boton-mas-info {
+    display: inline-block;
+    background: #ff3366;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.boton-mas-info:hover {
+    background: #cc2955;
+    transform: scale(1.05);
+}
+
+
+/* Botón de WhatsApp */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Pie de Página */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.articulo-detalle {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.articulo-detalle h1 {
+    font-size: 32px;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.articulo-detalle img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.articulo-detalle p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.boton-volver {
+    display: inline-block;
+    background: #1e3c72;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.boton-volver:hover {
+    background: #2a5298;
+}
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+   
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1e3c72;
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-menu ul li {
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu li {
+        padding: 15px 0;
+    }
+}
