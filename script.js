@@ -10,7 +10,7 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
         alert("Por favor, ingresa un correo válido.");
         event.preventDefault();
     } else {
-        let whatsappURL = `https://wa.me/1234567890?text=Hola, mi nombre es ${encodeURIComponent(nombre)} y mi correo es ${encodeURIComponent(correo)}. ${encodeURIComponent(mensaje)}`;
+        let whatsappURL = `https://wa.me/573135283661?text=Hola, mi nombre es ${encodeURIComponent(nombre)} y mi correo es ${encodeURIComponent(correo)}. ${encodeURIComponent(mensaje)}`;
         window.open(whatsappURL, "_blank");
     }
 });

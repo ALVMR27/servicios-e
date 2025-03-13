@@ -204,6 +204,51 @@ nav ul li a:hover {
 .articulo:hover {
     transform: translateY(-5px);
 }
+/* --- Estilos para los artículos --- */
+.articulo1 {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.articulo1 h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+.articulo1 p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.imagen-articulo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista con iconos mejorada */
+.lista-seguridad {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.lista-seguridad li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
 
 /* Sección Sobre Nosotros */
 #sobre-nosotros {
