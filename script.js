@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     if (sobreNosotros) {
         sobreNosotros.innerHTML = `
             <div class="sobre-nosotros-container">
-                <img src="assets/sobre-nosotros.jpg" alt="Nuestra Empresa" class="sobre-nosotros-img">
+                <img src="assets/empresa.jpg" alt="Nuestra Empresa" class="sobre-nosotros-img">
                 <div class="sobre-nosotros-texto">
                     <h2>Sobre Nosotros</h2>
                     <p><strong>Misión:</strong> Brindar soluciones tecnológicas seguras, innovadoras y efectivas para empresas en crecimiento.</p>
@@ -54,17 +54,18 @@ window.addEventListener("load", () => {
         `;
     }
 });
+
+// Ocultar el menú hamburguesa al hacer clic en una opción
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const menuNav = document.querySelector(".nav-menu");
-    const menuLinks = document.querySelectorAll(".nav-menu li a");
+    const menuLinks = document.querySelectorAll(".nav-menu a");
 
     if (menuToggle && menuNav) {
         menuToggle.addEventListener("click", function () {
             menuNav.classList.toggle("active");
         });
 
-        // Cerrar el menú al hacer clic en un enlace
         menuLinks.forEach(link => {
             link.addEventListener("click", function () {
                 menuNav.classList.remove("active");
@@ -72,3 +73,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
