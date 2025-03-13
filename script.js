@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     if (sobreNosotros) {
         sobreNosotros.innerHTML = `
             <div class="sobre-nosotros-container">
-                <img src="assets/empresa.jpg" alt="Nuestra Empresa" class="sobre-nosotros-img">
+                <img src="assets/sobre-nosotros.jpg" alt="Nuestra Empresa" class="sobre-nosotros-img">
                 <div class="sobre-nosotros-texto">
                     <h2>Sobre Nosotros</h2>
                     <p><strong>Misión:</strong> Brindar soluciones tecnológicas seguras, innovadoras y efectivas para empresas en crecimiento.</p>
